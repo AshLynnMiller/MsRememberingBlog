@@ -1,0 +1,36 @@
+[
+  {
+    "path": "posts/welcome/",
+    "title": "Welcome to Ms. Remembering",
+    "description": "Welcome to my new blog, Ms. Remembering. I hope you enjoy \nreading what I have to say!",
+    "author": [
+      {
+        "name": "Ashley L. Miller",
+        "url": {}
+      }
+    ],
+    "date": "2019-03-15",
+    "categories": [],
+    "preview": {},
+    "last_modified": "2019-03-15T14:08:09-07:00"
+  },
+  {
+    "path": "posts/2019-03-15-visualizing-pupillometry-data/",
+    "title": "Visualizing Pupillometry Data",
+    "description": "A demonstration on how to plot uncertainty (i.e., standard errors) using pupillometry data.",
+    "author": [
+      {
+        "name": "Ashley L. Miller",
+        "url": {}
+      }
+    ],
+    "date": "2019-03-13",
+    "categories": [
+      "dataviz",
+      "pupillometry",
+      "EDLD final project"
+    ],
+    "preview": "posts/2019-03-15-visualizing-pupillometry-data/visualizing-pupillometry-data_files/figure-html5/tidy_data_plot1USE-1.png",
+    "last_modified": "2019-03-15T14:11:33-07:00"
+  }
+]
