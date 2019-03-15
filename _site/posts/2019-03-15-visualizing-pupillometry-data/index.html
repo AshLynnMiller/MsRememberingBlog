@@ -19,7 +19,7 @@
  <!--/radix_placeholder_import_source-->
 
   <!--radix_placeholder_meta_tags-->
-<title>Ms. Remembering: Visualizing Pupillometry Data</title>
+<title>Ms.Remembering: Visualizing Pupillometry Data</title>
 
 <meta property="description" itemprop="description" content="A demonstration on how to plot uncertainty (i.e., standard errors) using pupillometry data."/>
 
@@ -30,15 +30,15 @@
 <meta name="article:author" content="Ashley L. Miller"/>
 
 <!--  https://developers.facebook.com/docs/sharing/webmasters#markup -->
-<meta property="og:title" content="Ms. Remembering: Visualizing Pupillometry Data"/>
+<meta property="og:title" content="Ms.Remembering: Visualizing Pupillometry Data"/>
 <meta property="og:type" content="article"/>
 <meta property="og:description" content="A demonstration on how to plot uncertainty (i.e., standard errors) using pupillometry data."/>
 <meta property="og:locale" content="en_US"/>
-<meta property="og:site_name" content="Ms. Remembering"/>
+<meta property="og:site_name" content="Ms.Remembering"/>
 
 <!--  https://dev.twitter.com/cards/types/summary -->
 <meta property="twitter:card" content="summary"/>
-<meta property="twitter:title" content="Ms. Remembering: Visualizing Pupillometry Data"/>
+<meta property="twitter:title" content="Ms.Remembering: Visualizing Pupillometry Data"/>
 <meta property="twitter:description" content="A demonstration on how to plot uncertainty (i.e., standard errors) using pupillometry data."/>
 
 <!--/radix_placeholder_meta_tags-->
@@ -50,7 +50,7 @@
 <!--/radix_placeholder_rmarkdown_metadata-->
   
   <script type="text/json" id="radix-resource-manifest">
-  {"type":"character","attributes":{},"value":["visualizing-pupillometry-data_files/figure-html5/academic_theme_print-1.png","visualizing-pupillometry-data_files/figure-html5/fig2_print-1.png","visualizing-pupillometry-data_files/figure-html5/p2funv3_print-1.png","visualizing-pupillometry-data_files/figure-html5/p3academv2_print-1.png","visualizing-pupillometry-data_files/figure-html5/plot1_print_custom-1.png","visualizing-pupillometry-data_files/figure-html5/plot3_fun_print-1.gif","visualizing-pupillometry-data_files/figure-html5/plot4_print-1.png","visualizing-pupillometry-data_files/figure-html5/plot4v2_print-1.png","visualizing-pupillometry-data_files/figure-html5/tidy_data_plot1USE-1.png","visualizing-pupillometry-data_files/figure-html5/tidy_data_plot2USE-1.png","visualizing-pupillometry-data_files/figure-html5/unnamed-chunk-1-1.png"]}
+  {"type":"character","attributes":{},"value":["visualizing-pupillometry-data_files/bowser-1.9.3/bowser.min.js","visualizing-pupillometry-data_files/distill-2.2.21/template.v2.js","visualizing-pupillometry-data_files/figure-html5/academic_theme_print-1.png","visualizing-pupillometry-data_files/figure-html5/fig2_print-1.png","visualizing-pupillometry-data_files/figure-html5/p2funv3_print-1.png","visualizing-pupillometry-data_files/figure-html5/p3academv2_print-1.png","visualizing-pupillometry-data_files/figure-html5/plot1_print_custom-1.png","visualizing-pupillometry-data_files/figure-html5/plot3_fun_print-1.gif","visualizing-pupillometry-data_files/figure-html5/plot4_print-1.png","visualizing-pupillometry-data_files/figure-html5/plot4v2_print-1.png","visualizing-pupillometry-data_files/figure-html5/tidy_data_plot1USE-1.png","visualizing-pupillometry-data_files/figure-html5/tidy_data_plot2USE-1.png","visualizing-pupillometry-data_files/figure-html5/unnamed-chunk-1-1.png","visualizing-pupillometry-data_files/jquery-1.11.3/jquery.min.js","visualizing-pupillometry-data_files/pagedtable-1.1/css/pagedtable.css","visualizing-pupillometry-data_files/pagedtable-1.1/js/pagedtable.js","visualizing-pupillometry-data_files/webcomponents-2.0.0/webcomponents.js"]}
   </script>
   <!--radix_placeholder_navigation_in_header-->
 
@@ -1319,10 +1319,12 @@ document.addEventListener('DOMContentLoaded', function() {
 <header class="header header--fixed" role="banner">
 <nav class="distill-site-nav distill-site-header">
 <div class="nav-left">
-<a href="../../index.html" class="title">Ms. Remembering</a>
+<span class="logo">
+<img src="../../images/brain.png"/>
+</span>
+<a href="../../index.html" class="title">Ms.Remembering</a>
 </div>
 <div class="nav-right">
-<a href="../../index.html">Home</a>
 <a href="../../about.html">About</a>
 <a href="https://github.com/AshLynnMiller">
 <i class="fa fa-github"></i>
@@ -1675,7 +1677,7 @@ plot3_OG &lt;- plot3_data %&gt;%
                           breaks=c(&quot;Primacy Items&quot;, &quot;Mid Items&quot;, &quot;Recency Items&quot;),
                           labels=c(&quot;Primacy&quot;, &quot;Mid&quot;, &quot;Recency&quot;)) +
     facet_wrap(~span_group) +
-    theme_bw(base_size = 14) +
+    theme_bw(base_size = 12) +
     theme(axis.text.x = element_text(angle = 45, hjust = 1),
           plot.subtitle = element_text(face = &quot;bold&quot;, hjust = 0.5),
           strip.text = element_text(size = 11),
@@ -1768,7 +1770,7 @@ plot3_fun &lt;- ggplot(plot3_data, aes(x = bin, y = mean_TEPR, colour = word)) +
       transition_states(stat(.draw), 1, 2) +
       enter_fade() + exit_fade() +
       shadow_mark(future = TRUE, size = 0.25, color = &quot;gray50&quot;, alpha = 1/4) +
-      theme_minimal(base_size = 14) +
+      theme_minimal(base_size = 12) +
       # Rotate x axis values so they are angled; center subtitle
       theme(axis.text.x = element_text(angle = 45, hjust = 1),
             plot.subtitle = element_text(face = &quot;bold&quot;, hjust = 0.5),

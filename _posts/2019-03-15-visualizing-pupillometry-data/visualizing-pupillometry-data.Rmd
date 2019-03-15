@@ -682,7 +682,7 @@ plot3_OG <- plot3_data %>%
                           breaks=c("Primacy Items", "Mid Items", "Recency Items"),
                           labels=c("Primacy", "Mid", "Recency")) +
     facet_wrap(~span_group) +
-    theme_bw(base_size = 14) +
+    theme_bw(base_size = 12) +
     theme(axis.text.x = element_text(angle = 45, hjust = 1),
           plot.subtitle = element_text(face = "bold", hjust = 0.5),
           strip.text = element_text(size = 11),
@@ -719,7 +719,7 @@ plot3_OG <- plot3_data %>%
                           breaks=c("Primacy Items", "Mid Items", "Recency Items"),
                           labels=c("Primacy", "Mid", "Recency")) +
     facet_wrap(~span_group) +
-    theme_bw(base_size = 14) +
+    theme_bw(base_size = 12) +
     theme(axis.text.x = element_text(angle = 45, hjust = 1),
           plot.subtitle = element_text(face = "bold", hjust = 0.5),
           strip.text = element_text(size = 11),
@@ -773,9 +773,9 @@ plot3_academic <- ggplot(plot3_data, aes(x = bin, y = mean_TEPR, colour = word))
           strip.text = element_text(size = 11),
           legend.position = "bottom") +
         # Change labels
-        labs(caption = "Figure 3. Pupil diameter as a function of serial position and time across encoding period for low WMC (n = 31), medium WMC 
-(n = 69), and high WMC (n = 33) individuals. Serial position was broken down into Primacy (words 
-1–3), Mid (words 4–7), and Recency (words 8–10) for graphical purposes only.",
+        labs(caption = "Figure 3. Pupil diameter as a function of serial position and time across encoding period for low WMC 
+(n = 31), medium WMC (n = 69), and high WMC (n = 33) individuals. Serial position was broken 
+down into Primacy (words 1–3), Mid (words 4–7), and Recency (words 8–10) for graphical purposes.",
              y = "Changes in Pupil Diameter (mm)",
              x = "Time (ms)") +
         # Adjust/Relabel x axis values to make more sense to reader
@@ -892,7 +892,7 @@ plot3_fun <- ggplot(plot3_data, aes(x = bin, y = mean_TEPR, colour = word)) +
       transition_states(stat(.draw), 1, 2) +
       enter_fade() + exit_fade() +
       shadow_mark(future = TRUE, size = 0.25, color = "gray50", alpha = 1/4) +
-      theme_minimal(base_size = 14) +
+      theme_minimal(base_size = 12) +
       # Rotate x axis values so they are angled; center subtitle
       theme(axis.text.x = element_text(angle = 45, hjust = 1),
             plot.subtitle = element_text(face = "bold", hjust = 0.5),

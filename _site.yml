@@ -1,12 +1,9 @@
 name: "MsRememberingBlog"
-title: "Ms. Remembering"
-description: |
-  Ms.Remembering
+title: "Ms.Remembering"
 output_dir: "_site"
 navbar:
+  logo: images/brain.png
   right:
-    - text: "Home"
-      href: index.html
     - text: "About"
       href: about.html
     - icon: fa fa-github
