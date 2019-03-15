@@ -1,6 +1,6 @@
 name: "MsRememberingBlog"
 title: "Ms.Remembering"
-output_dir: "_site"
+output_dir: "docs"
 navbar:
   logo: images/brain.png
   right:

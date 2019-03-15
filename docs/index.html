@@ -19,26 +19,26 @@
  <!--/radix_placeholder_import_source-->
 
   <!--radix_placeholder_meta_tags-->
-  <title>Ms. Remembering</title>
+  <title>Ms.Remembering: </title>
   
   
   
   
   <!--  https://developers.facebook.com/docs/sharing/webmasters#markup -->
-  <meta property="og:title" content="Ms. Remembering"/>
+  <meta property="og:title" content="Ms.Remembering: "/>
   <meta property="og:type" content="article"/>
   <meta property="og:locale" content="en_US"/>
-  <meta property="og:site_name" content="Ms. Remembering"/>
+  <meta property="og:site_name" content="Ms.Remembering"/>
   
   <!--  https://dev.twitter.com/cards/types/summary -->
   <meta property="twitter:card" content="summary"/>
-  <meta property="twitter:title" content="Ms. Remembering"/>
+  <meta property="twitter:title" content="Ms.Remembering: "/>
   
   <!--/radix_placeholder_meta_tags-->
   <!--radix_placeholder_rmarkdown_metadata-->
   
   <script type="text/json" id="radix-rmarkdown-metadata">
-  {"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","site","listing"]}},"value":[{"type":"character","attributes":{},"value":["Ms. Remembering"]},{"type":"character","attributes":{},"value":["distill::distill_website"]},{"type":"character","attributes":{},"value":["posts"]}]}
+  {"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","site","listing"]}},"value":[{"type":"character","attributes":{},"value":[""]},{"type":"character","attributes":{},"value":["distill::distill_website"]},{"type":"character","attributes":{},"value":["posts"]}]}
   </script>
   <!--/radix_placeholder_rmarkdown_metadata-->
   <!--radix_placeholder_navigation_in_header-->
@@ -1259,8 +1259,38 @@
   <script src="site_libs/webcomponents-2.0.0/webcomponents.js"></script>
   <script src="site_libs/distill-2.2.21/template.v2.js"></script>
   <!--radix_placeholder_site_in_header-->
+  <style type="text/css">
+  .distill-site-nav {
+    color: rgba(255, 255, 255, 0.8);
+    background-color: #167A87; 
+      font-size: 15px;
+    font-weight: 300;
+  }
+  
+  .distill-site-nav a {
+    color: inherit;
+    text-decoration: none;
+  }
+  
+  .distill-site-nav a:hover {
+    color: white;
+  }
+  
+  .distill-site-header {
+  }
+  
+  .distill-site-footer {
+  }
+  
+  @media print {
+    .distill-site-nav {
+      display: none;
+    }
+  }
+  </style>
   <!--/radix_placeholder_site_in_header-->
 
+  <link rel="stylesheet" href="style.css" type="text/css"/>
 
 </head>
 
@@ -1269,7 +1299,7 @@
 <!--radix_placeholder_front_matter-->
 
 <script id="distill-front-matter" type="text/json">
-{"title":"Ms. Remembering","authors":[]}
+{"title":"","authors":[]}
 </script>
 
 <!--/radix_placeholder_front_matter-->
@@ -1277,11 +1307,19 @@
 <header class="header header--fixed" role="banner">
 <nav class="distill-site-nav distill-site-header">
 <div class="nav-left">
-<a href="index.html" class="title">Ms. Remembering</a>
+<span class="logo">
+<img src="images/brain.png"/>
+</span>
+<a href="index.html" class="title">Ms.Remembering</a>
 </div>
 <div class="nav-right">
-<a href="index.html">Home</a>
 <a href="about.html">About</a>
+<a href="https://github.com/AshLynnMiller">
+<i class="fa fa-github"></i>
+</a>
+<a href="https://www.researchgate.net/profile/Ashley_Miller52">
+<i class="fab fa-researchgate"></i>
+</a>
 <a href="javascript:void(0);" class="nav-toggle">&#9776;</a>
 </div>
 </nav>
@@ -1606,23 +1644,41 @@ function init_posts_list() {
 
 
 
-<div class="posts-container posts-apply-limit l-page">
+<div class="posts-container posts-with-sidebar posts-apply-limit l-screen-inset">
 <div class="posts-list">
-<h1 class="posts-list-caption">Ms. Remembering</h1>
-<a href="posts/welcome/" class="post-preview">
-<script class="post-metadata" type="text/json">{"categories":[]}</script>
+<h1 class="posts-list-caption"></h1>
+<a href="posts/2019-03-15-visualizing-pupillometry-data/" class="post-preview">
+<script class="post-metadata" type="text/json">{"categories":["dataviz","pupillometry","EDLD final project"]}</script>
 <div class="metadata">
-<div class="publishedDate">March 15, 2019</div>
+<div class="publishedDate">March 13, 2019</div>
 </div>
 <div class="thumbnail">
-<img/>
+<img data-src="posts/2019-03-15-visualizing-pupillometry-data/visualizing-pupillometry-data_files/figure-html5/tidy_data_plot1USE-1.png"/>
 </div>
 <div class="description">
-<h2>Welcome to Ms. Remembering</h2>
-<p>Welcome to our new blog, Ms. Remembering. We hope you enjoy 
-reading what we have to say!</p>
+<h2>Visualizing Pupillometry Data</h2>
+<p>A demonstration on how to plot uncertainty (i.e., standard errors) using pupillometry data.</p>
 </div>
 </a>
+</div>
+<div class="posts-sidebar">
+<div class="sidebar-section categories">
+<h3>Categories</h3>
+<ul>
+<li>
+<a href="#dataviz">dataviz</a>
+<span class="category-count">(1)</span>
+</li>
+<li>
+<a href="#EDLD_final_project">EDLD final project</a>
+<span class="category-count">(1)</span>
+</li>
+<li>
+<a href="#pupillometry">pupillometry</a>
+<span class="category-count">(1)</span>
+</li>
+</ul>
+</div>
 </div>
 <div class="posts-more">
 <a href="#">More articles &raquo;</a>
@@ -1631,7 +1687,7 @@ reading what we have to say!</p>
 <!--/radix_placeholder_article_listing-->
 
 <div class="d-title">
-<h1>Ms. Remembering</h1>
+<h1>index.utf8</h1>
 
 </div>
 
