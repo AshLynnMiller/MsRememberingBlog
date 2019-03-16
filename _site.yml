@@ -1,5 +1,5 @@
 name: "MsRememberingBlog"
-title: "Ms.Remembering"
+title: "MissRemembering"
 output_dir: "docs"
 navbar:
   logo: images/brain.png
