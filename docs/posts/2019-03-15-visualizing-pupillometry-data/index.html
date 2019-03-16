@@ -1661,7 +1661,7 @@ plot3_data %&lt;&gt;%
                              &#39;Medium&#39; = &quot;Medium WMC&quot;,
                              &#39;High&#39; = &quot;High WMC&quot;))</code></pre>
 </div>
-<p>Below is the plot 3’s starting point (was Fig 6. in <a href="https://www.sciencedirect.com/science/article/pii/S0749596X18300846">Miller et al. 2019</a>). Note that error bars aren’t even provided!:</p>
+<p>Below is Plot 3’s starting point (was Fig 6. in <a href="https://www.sciencedirect.com/science/article/pii/S0749596X18300846">Miller et al. 2019</a>). Note that error bars aren’t even provided!:</p>
 <div class="layout-chunk" data-layout="l-body">
 <pre class="r"><code>
 plot3_OG &lt;- plot3_data %&gt;%
@@ -1754,7 +1754,7 @@ plot3_academic + academic_theme</code></pre>
 <p><img src="visualizing-pupillometry-data_files/figure-html5/p3academv2_print-1.png" width="720" style="display: block; margin: auto;" /></p>
 </div>
 <h3 id="fancierprettier-version-of-plot-3">Fancier/Prettier Version of Plot 3</h3>
-<p>This time, not only am I going to apply my own theme, but I will map uncertainty with a hypothetical outcome plot (HOP). Basically, like plot 1, uncertainty is mapped via generation of outcome draws from a fitted model. HOPS just animate this process so that the audience can observe changes across hypothetical samples.</p>
+<p>This time, not only am I going to apply my own theme, but I will map uncertainty with a hypothetical outcome plot (HOP). Basically, like Plot 1, uncertainty is mapped via generation of outcome draws from a fitted model. HOPS just animate this process so that the audience can observe changes across hypothetical samples.</p>
 <div class="layout-chunk" data-layout="l-body">
 <pre class="r"><code>
 plot3_fun &lt;- ggplot(plot3_data, aes(x = bin, y = mean_TEPR, colour = word)) +

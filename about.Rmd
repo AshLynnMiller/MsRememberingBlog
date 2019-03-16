@@ -11,7 +11,7 @@ knitr::opts_chunk$set(echo = FALSE)
 The purpose of this blog is twofold:
 
   + Help researchers better visualize their findings for a variety of audiences
-  + Help increase reproducability of my own research by providing researches with necessary `R` code 
+  + Help increase reproducability of my own research by providing researchers with necessary `R` code 
 
 As for myself, I am a fourth-year graduate student in Dr. Nash Unsworth’s [Memory and Attention Individual Differences (MAID) Lab](https://maidlab.uoregon.edu/). I grew up in Idaho and graduated with a BSc in psychology at Idaho State University in December, 2014. In the fall of 2015, I began attending the University of Oregon (UO) as a doctoral student in the cognitive neuroscience program. I completed a MSc at UO in December 2016. 
 
