@@ -17,6 +17,31 @@ categories:
   - EDLD final project
 ---
 
+```{r install_libraries, include=FALSE, eval=FALSE}
+
+# Each of the following libries will be loaded below.
+
+devtools::install_github("datalorax/sundry")
+devtools::install_github("wilkelab/ungeviz")
+install.packages("pkgconfig")
+install.packages("rio")
+install.packages("here")
+install.packages("tidyverse")
+install.packages("magrittr")
+install.packages("ggforce")
+install.packages("rcartocolor")
+install.packages("showtext")
+install.packages("gganimate")
+install.packages("glue")
+install.packages("mgcv")
+install.packages("transformr")
+install.packages("RColorBrewer")
+install.packages("knitr")
+install.packages("jpeg")
+install.packages("gifski")
+install.packages("colorspance)
+```
+
 ```{r setup, include=FALSE}
 
 # Set knitr options
@@ -25,27 +50,6 @@ knitr::opts_chunk$set(echo = TRUE,
                       warning = FALSE,
                       fig.width = 7.5,
                       fig.height = 4.5)
-
-# Load packages
-#devtools::install_github("datalorax/sundry")
-#devtools::install_github("wilkelab/ungeviz")
-#install.packages("pkgconfig")
-#install.packages("rio")
-#install.packages("here")
-#install.packages("tidyverse")
-#install.packages("magrittr")
-#install.packages("ggforce")
-#install.packages("rcartocolor")
-#install.packages("showtext")
-#install.packages("gganimate")
-#install.packages("glue")
-#install.packages("mgcv")
-#install.packages("transformr")
-#install.packages("RColorBrewer")
-#install.packages("knitr")
-#install.packages("jpeg")
-#install.packages("gifski")
-#install.packages("colorspance)
 
 library(pkgconfig)
 library(rio)
@@ -122,10 +126,10 @@ The data-set I will be using for this demonstration is de-identified and already
 Before beginning, let's first load and inspect the data:
 
 ```{r load_data}
-data <- import(here("data", "DeIntentifiedJML2019Data_Exp1.sav"),
-               setclass = "tibble") %>% 
-  characterize() %>%
-  janitor::clean_names()
+data <- import("https://github.com/AshLynnMiller/MsRememberingBlog/raw/master/data/DeIntentifiedJML2019Data_Exp1.sav",
+             setclass = "tibble") %>%
+        characterize() %>%
+        janitor::clean_names()
 
 paged_table(data)
 ```
@@ -920,7 +924,7 @@ plot3_fun <- ggplot(plot3_data, aes(x = bin, y = mean_TEPR, colour = word)) +
                          limits = c(-0.10, 0.15))
 ```
 
-```{r plot3_fun_print, fig.align='center'}
+```{r plot3_fun_print, fig.align='center', layout="l-screen-inset shaded"}
 plot3_fun + bbg_darktheme
 ```
 

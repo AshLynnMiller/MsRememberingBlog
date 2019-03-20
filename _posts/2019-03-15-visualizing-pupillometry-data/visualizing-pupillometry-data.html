@@ -970,10 +970,10 @@
 <p>Before beginning, let’s first load and inspect the data:</p>
 <div class="layout-chunk" data-layout="l-body">
 <pre class="r"><code>
-data &lt;- import(here(&quot;data&quot;, &quot;DeIntentifiedJML2019Data_Exp1.sav&quot;),
-               setclass = &quot;tibble&quot;) %&gt;% 
-  characterize() %&gt;%
-  janitor::clean_names()
+data &lt;- import(&quot;https://github.com/AshLynnMiller/MsRememberingBlog/raw/master/data/DeIntentifiedJML2019Data_Exp1.sav&quot;,
+             setclass = &quot;tibble&quot;) %&gt;%
+        characterize() %&gt;%
+        janitor::clean_names()
 
 paged_table(data)</code></pre>
 <div data-pagedtable="false">
@@ -1410,7 +1410,7 @@ plot3_fun &lt;- ggplot(plot3_data, aes(x = bin, y = mean_TEPR, colour = word)) +
                                    &quot;0.05&quot;, &quot;0.10&quot;, &quot;0.15&quot;),
                          limits = c(-0.10, 0.15))</code></pre>
 </div>
-<div class="layout-chunk" data-layout="l-body">
+<div class="layout-chunk" data-layout="l-screen-inset shaded">
 <pre class="r"><code>
 plot3_fun + bbg_darktheme</code></pre>
 <p><img src="visualizing-pupillometry-data_files/figure-html5/plot3_fun_print-1.gif" style="display: block; margin: auto;" /></p>
